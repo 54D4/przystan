@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <title>Posty</title>
+  </head>
+  <body>
+    <!--Header-->
+    <header
+      class="w-full p-5 flex flex-grow justify-between bg-white sticky top-0 z-50	shadow-lg">
+      <img src="./" alt="logo">
+      <!--Navbar-->
+      <nav class="hidden md:flex">
+        <a class="text-xl mx-4 " href="#">Strona Główna</a>
+        <a class="text-xl mx-4 " href="#">Informacje</a>
+        <a class="text-xl mx-4 " href="#">Aktualność</a>
+      </nav>
+      <!--availability_icons-->
+      <div class="flex items-center hidden md:flex"
+        id="availability_icons">
+        <button
+          class="text-2xl font-bold mx-4 transition-all hover:scale-125 active:scale-75 cursor-pointer"
+          id="increase-scale">A+</button>
+        <button
+          class="text-2xl font-bold mx-4 transition-all hover:scale-125 active:scale-75 cursor-pointer	">A-</button>
+        <img src="assets/change_color.svg "
+          class=" transition-all hover:scale-125 active:scale-75 cursor-pointer	"
+          alt="change_color" width="32">
+      </div>
+      <!--mobile navbar-->
+      <img
+        class="flex md:hidden transition-all hover:scale-125 active:scale-75 cursor-pointer "
+        width="32" src="./assets/setting.svg" alt="setting"
+        id="menu-toggle">
+      <div
+        class=" shadow-lg  flex flex-col justify-center items-center p-5 top-[64px]  md:hidden absolute z-50 right-0  hidden  bg-white rounded-b-lg "
+        id="menu">
+        <nav class="flex flex-col">
+          <a class="my-3 text-center" href="#">Strona Główna</a>
+          <a class="my-3 text-center" href="#">Informacje</a>
+          <a class="my-3 text-center" href="#">Aktualność</a>
+        </nav>
+        <div class="flex items-center my-3  "
+          id="availability_icons">
+          <button
+            class="text-xl font-bold mx-2 transition-all hover:scale-125 active:scale-75 cursor-pointer"
+            id="increase-scale">A+</button>
+          <button
+            class="text-xl font-bold mx-2 transition-all hover:scale-125 active:scale-75 cursor-pointer	">A-</button>
+          <img src="assets/change_color.svg "
+            class=" transition-all  hover:scale-125 active:scale-75 cursor-pointer	"
+            alt="change_color" width="32">
+        </div>
+      </div>
+    </header>
+    <br>
+    <br>
+    <br>
+  </body>
+</html>

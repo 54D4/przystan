@@ -1,0 +1,64 @@
+body {
+    background: #EDF1FF;
+    transform-origin: top left;
+}
+
+.img_section {
+    position: relative;
+    flex: 1;
+    height: 100%;
+    width: 50%;
+    clip-path: polygon(15% 0%, 100% 0%, 100% 100%, 0% 100%);
+    background: blue;
+}
+
+.img_ornament {
+    box-shadow: 20px 20px 0px 10px #3156E8;
+}
+
+.main_img {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-image: url('./assets/images/main.png');
+}
+
+.text_shadow {
+    text-shadow: 2px 2px 1px #000000;
+}
+
+.about_img {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-image: url('./assets/images/about_img.png');
+}
+
+.active {
+    border: 4px solid white;
+    opacity: 1;
+    transition: opacity 0.5s;
+}
+
+.disactive {
+    opacity: 0.6;
+    transition: opacity 0.5s;
+}
+
+/* Style for large screens */
+@media (min-width: 1024px) {
+    #carousel-items {
+        transform: translateX(0);
+        /* Make sure all slides are shown */
+    }
+
+    /* For desktop view, display all items in a row */
+    #carousel-items {
+        display: flex;
+    }
+
+    .min-w-full {
+        min-width: auto;
+        /* Allow the slides to shrink and fit in the row */
+    }
+}
